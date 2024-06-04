@@ -1,9 +1,10 @@
 function OuterFunction(){
-    let message = "outerFunctionScope"
+    var message = "outerFunctionScope"
     function innerFunction(){
         console.log(message)
     }
     innerFunction()
 }
+console.log(message)
 
 OuterFunction()
