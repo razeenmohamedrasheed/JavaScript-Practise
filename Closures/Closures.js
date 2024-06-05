@@ -5,6 +5,6 @@ function OuterFunction(){
     }
     innerFunction()
 }
-console.log(message)
+// console.log(message)
 
 OuterFunction()
