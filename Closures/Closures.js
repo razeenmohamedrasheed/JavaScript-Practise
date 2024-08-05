@@ -1,10 +1,14 @@
-function OuterFunction(){
-    var message = "outerFunctionScope"
-    function innerFunction(){
-        console.log(message)
+function studentData(name){
+    function showData(){
+        console.log(`The student name is ${name}`)
     }
-    innerFunction()
-}
-// console.log(message)
 
-OuterFunction()
+    function contact(){
+        console.log(`${name} contact number is 908098098098`)
+    }
+    showData()
+    contact()
+}
+
+const name1 = studentData("razeen")
+const name2 = studentData("rasheed")
