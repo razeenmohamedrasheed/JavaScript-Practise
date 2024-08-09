@@ -1,13 +1,15 @@
-console.log("started 1")
-function getData(cb){
+console.log("start")
+
+function getData(callback){
     setTimeout(()=>{
-        cb("im tesing callback logic") 
-    },5000)
+        callback("CALLBACK TRIGGERED")
+    },[2000])
 }
 
-const callData=(value)=>{
+function printData(value){
     console.log(value)
 }
-getData(callData)
 
-console.log("Ended 1")
+getData(printData)
+
+console.log("end")
