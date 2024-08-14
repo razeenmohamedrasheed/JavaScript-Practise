@@ -28,7 +28,7 @@ const promise2 = new Promise((resolve,reject)=>{
 
 const promiseData = Promise.all([promise1,promise2])
 const promiseData1 = Promise.allSettled([promise1,promise2])
-const promiseData3 = Promise.any([promise1,promise2])
+
 
 
 promiseData.then((res)=>{
