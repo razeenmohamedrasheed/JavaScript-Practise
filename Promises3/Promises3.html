@@ -7,6 +7,25 @@
 
 </head>
 <body>
-    <script src="Promises3.js"></script>
+    <script>
+
+        
+const promise1 = new Promise((resolve,reject)=>{
+    reject(["java","python","GoLang"])
+})
+
+const promise2 = new Promise((resolve,reject)=>{
+    resolve(["React","Angular","Vue"])
+    //  reject("failed")
+})
+const promiseData3 = Promise.any([promise1,promise2])
+// const promiseData3 = Promise.race([promise1,promise2])
+
+promiseData3.then((res)=>{
+    console.log(res)
+}).catch((err)=>{
+    console.log(err)
+})
+    </script>
 </body>
 </html>
