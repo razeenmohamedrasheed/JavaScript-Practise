@@ -1,7 +1,7 @@
 const element = document.querySelector("input")
 
-function onChnageData(){
-    console.log("testtstst")
+function onChnageData(data){
+    console.log("testtstst",data)
 }
 
 // without debounce
@@ -11,9 +11,9 @@ function onChnageData(){
 
 function withDebounce(fun,time){
     let timer;
-    return function(){
+    return function(...args){
         clearTimeout(timer)
-        timer = setTimeout(() =>fun(),time);
+        timer = setTimeout(() =>fun(args),time);
     }
 
 }
