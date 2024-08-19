@@ -12,3 +12,5 @@ function studentData(name){
 
 const name1 = studentData("razeen")
 const name2 = studentData("rasheed")
+
+
