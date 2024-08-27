@@ -1,4 +1,4 @@
-// Throttle function: will limit the number of times a function can be called over time
+
 function throttle(func, delay) {
     let lastCall = 0;
     
